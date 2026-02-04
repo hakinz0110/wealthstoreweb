@@ -31,8 +31,10 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
-# IMPORTANT: Keep build/web for Vercel deployment
+
+# Ignore all build directories EXCEPT build/web for Vercel
+/build/*
+!/build/web/
 !/build/web/
 
 # Symbolication related
