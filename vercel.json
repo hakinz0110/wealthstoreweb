@@ -1,7 +1,7 @@
 {
-  "buildCommand": "flutter build web --release --dart-define=SUPABASE_URL=$SUPABASE_URL --dart-define=SUPABASE_ANON_KEY=$SUPABASE_ANON_KEY --dart-define=PAYSTACK_PUBLIC_KEY=$PAYSTACK_PUBLIC_KEY --dart-define=PAYSTACK_SECRET_KEY=$PAYSTACK_SECRET_KEY",
+  "buildCommand": "sh build.sh",
   "outputDirectory": "build/web",
-  "installCommand": "if cd .fvm/flutter_sdk 2>/dev/null; then export PATH=\"$PWD/bin:$PATH\" && cd ../..; elif command -v flutter >/dev/null 2>&1; then echo 'Using system Flutter'; else git clone https://github.com/flutter/flutter.git -b stable --depth 1 && export PATH=\"$PWD/flutter/bin:$PATH\"; fi && flutter doctor && flutter pub get",
+  "installCommand": "sh install.sh",
   "framework": null,
   "rewrites": [
     {
