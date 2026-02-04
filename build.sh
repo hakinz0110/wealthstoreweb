@@ -1,6 +1,14 @@
 #!/bin/bash
 # Vercel build script for Flutter Web
 
+# Load Flutter PATH from install step
+if [ -f flutter_path.sh ]; then
+  source flutter_path.sh
+fi
+
+# Add Flutter to PATH (in case flutter_path.sh doesn't exist)
+export PATH="$PWD/flutter/bin:$PATH"
+
 # Build Flutter web with environment variables
 flutter build web --release \
   --dart-define=SUPABASE_URL="$SUPABASE_URL" \
