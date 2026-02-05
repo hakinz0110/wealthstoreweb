@@ -1,7 +1,7 @@
 {
-  "buildCommand": "sh build.sh",
+  "buildCommand": null,
   "outputDirectory": "build/web",
-  "installCommand": "sh install.sh",
+  "installCommand": null,
   "framework": null,
   "rewrites": [
     {
