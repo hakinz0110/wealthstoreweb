@@ -58,3 +58,8 @@ android/key.properties
 keystore-details.txt
 KEYSTORE_INFO.md
 QUICK_REFERENCE.txt
+
+# Documentation files - send manually
+DEVELOPER_SETUP_GUIDE.md
+GIT_BRANCHING_STRATEGY.md
+lo.txt
